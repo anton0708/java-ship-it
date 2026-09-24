@@ -18,7 +18,7 @@ public class ParcelBox<T extends Parcel> {
         return currentWeight;
     }
 
-    public boolean isFull(Parcel parcel){
+    protected boolean isFull(Parcel parcel){
         if (currentWeight + parcel.weight > maxWeight) {
             System.out.println(
                     "Предупреждение: Не удалось добавить посылку! " +
